@@ -15,12 +15,21 @@
       <source src="hbd.mpeg" type="audio/mpeg" />
       Browser Anda tidak mendukung elemen audio.
     </audio>
+    <div id="overlay">
+      <div id="popup">
+        <h2>Selamat Pagi, Sayang!</h2>
+        <p>Ada musik romantis untuk menemanimu. Klik tombol di bawah ini ya!</p>
+        <button id="playMusicAndCloseBtn">Mulai Musik 🎵</button>
+      </div>
+    </div>
 
     <div class="container">
       <div class="card">
         <h1 id="greeting">Selamat Pagi, Sayang!</h1>
         <p id="message">Mentari pagi ini tak seindah senyummu. Bangunlah dan mulailah hari dengan penuh cinta.</p>
-        <button id="nextBtn">Ganti Pesan</button>
+        <div class="button-group">
+          <button id="nextBtn">Ganti Pesan</button>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
