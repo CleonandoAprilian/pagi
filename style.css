@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: "Pacifico", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a8b 0%, #ff6a88 50%, #ff99ac 100%);
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  flex-direction: column; /* Menggunakan flexbox untuk penempatan di tengah */
+}
+
+.container {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease-in-out;
+  transform-style: preserve-3d;
+  animation: fadeIn 1.5s ease-in-out;
+  width: 90%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: clamp(1.8em, 7vw, 2.5em);
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: clamp(1em, 4vw, 1.2em);
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  background: #ff4d6d;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-family: "Pacifico", cursive;
+  font-size: clamp(0.9em, 4vw, 1em);
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+  background: #e63946;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-out-in {
+  animation: fadeOutIn 1.5s ease-in-out;
+}
+
+@keyframes fadeOutIn {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background: linear-gradient(180deg, #ff9a8b 0%, #ff6a88 100%);
+  }
+}
