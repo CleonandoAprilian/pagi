@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       greeting: "IHH KANGENNNNN",
-      message: "kali ini gx ada semangatt, akunya butuh disemangattin, kangen kamuuu.",
+      message: "kali ini gx ada kata-kata penyemangatt, soalnya aku juga butuh disemangattin, kangen kamuuu.",
     },
   ];
 
@@ -40,3 +40,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 750); // Durasi 750ms (setengah dari 1.5s di CSS)
   });
 });
+
